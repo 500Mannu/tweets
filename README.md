@@ -1,12 +1,17 @@
 ## YDR Tweet Documentation
 
-- Loading users
+## Database
 
-Run php artisan user:get fiie_location
+- Create a database with the name yonder
+- Run php artisan migrate
 
-- Loading tweets
+## Loading users
 
-Run php artisan tweets:get file_location
+- Run php artisan user:get fiie_location
+
+## Loading tweets
+
+- Run php artisan tweets:get file_location
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
