@@ -12,8 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
 });
 
 
-Route::get('users/{username}', 'UserController@index');
+Route::get('/', 'UserController@index');
+Route::get('user/{username}', 'UserController@get_user_feed');

@@ -7,13 +7,25 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    public function index($username)
+    public function index()
+    {
+        $tweets = new Tweet();
+
+        $data = $tweets->get_tweets();
+        
+        return view('tweets.tweets', [ 
+            'data' => $data
+        ]);
+    }
+
+    public function get_user_feed($username)
     {
         $tweet = new Tweet();
+        
+        $data = $tweet->get_user_feed($username);
 
-        $data = $tweet->get_tweets($username);
-        dd($data);
-
-        return view('app/feed');
+        return view('tweets/userfeed', [
+            'data' => $data
+        ]);
     }
 }
