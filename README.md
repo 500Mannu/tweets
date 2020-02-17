@@ -1,3 +1,13 @@
+## YDR Tweet Documentation
+
+- Loading users
+
+Run php artisan user:get fiie_location
+
+- Loading tweets
+
+Run php artisan tweets:get file_location
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">
